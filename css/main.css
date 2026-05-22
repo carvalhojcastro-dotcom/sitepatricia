@@ -1,0 +1,233 @@
+/* ─────────────────────────────────────────────
+   BRAND COLOR TOKENS
+   ───────────────────────────────────────────── */
+
+:root {
+  --gold:          #C9A84C;
+  --gold-light:    #D4B56A;
+  --gold-dark:     #8B6B1E;
+  --gold-glow:     rgba(201, 168, 76, 0.38);
+  --gold-subtle:   rgba(201, 168, 76, 0.15);
+  --gold-dim:      rgba(201, 168, 76, 0.06);
+  --bg-page:       #181818;
+  --cursor-size:   20px;
+  --cursor-hover-size: 80px;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  cursor: none;
+  overflow-x: hidden;
+  background-color: var(--bg-page);
+}
+
+h1, h2, h3, h4, h5, h6, .font-heading {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg-page); }
+::-webkit-scrollbar-thumb { background: rgba(201,168,76,0.25); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--gold); }
+
+/* ── Glass Panel ─────────────────────────────── */
+.glass-panel {
+  background: rgba(201, 168, 76, 0.025);
+  backdrop-filter: blur(16px) saturate(160%);
+  -webkit-backdrop-filter: blur(16px) saturate(160%);
+  border-top:    1px solid rgba(201, 168, 76, 0.18);
+  border-left:   1px solid rgba(201, 168, 76, 0.09);
+  border-right:  1px solid rgba(201, 168, 76, 0.09);
+  border-bottom: 1px solid rgba(201, 168, 76, 0.05);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.45);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.glass-panel::before {
+  content: '';
+  position: absolute;
+  top: 0; left: -100%; width: 100%; height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(201,168,76,0.06), transparent);
+  transition: 0.5s;
+  pointer-events: none;
+  z-index: 20;
+}
+.glass-panel:hover {
+  background: rgba(201, 168, 76, 0.05);
+  border-color: rgba(201, 168, 76, 0.35);
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(201, 168, 76, 0.08);
+}
+.glass-panel:hover::before {
+  left: 100%;
+  transition: 0.7s ease-in-out;
+}
+
+/* Panels that should NOT lift (structural / decorative) */
+.glass-static:hover {
+  transform: none !important;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.45) !important;
+  background: rgba(201, 168, 76, 0.025) !important;
+  border-color: rgba(201, 168, 76, 0.18) !important;
+}
+.glass-static:hover::before { left: -100% !important; }
+
+/* ── Liquid Blobs ─────────────────────────────── */
+.liquid-blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.6;
+  z-index: -1;
+  animation: float 10s infinite alternate cubic-bezier(0.4, 0, 0.2, 1);
+}
+@keyframes float {
+  0%   { transform: translate(0, 0) scale(1); }
+  100% { transform: translate(30px, 50px) scale(1.1); }
+}
+
+/* ── Custom Cursor ────────────────────────────── */
+#cursor {
+  position: fixed; top: 0; left: 0;
+  width: var(--cursor-size); height: var(--cursor-size);
+  background-color: white; border-radius: 50%;
+  pointer-events: none; z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition: width 0.3s, height 0.3s, background-color 0.3s;
+  mix-blend-mode: overlay;
+  backdrop-filter: blur(2px);
+}
+#cursor.hovered {
+  width: var(--cursor-hover-size); height: var(--cursor-hover-size);
+  opacity: 0.4;
+  background-color: rgba(201, 168, 76, 0.55);
+  mix-blend-mode: normal;
+  border: 1px solid rgba(201,168,76,0.6);
+}
+
+/* ── Noise Overlay ────────────────────────────── */
+.noise-overlay {
+  position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+  pointer-events: none; z-index: 50; opacity: 0.04;
+  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  mix-blend-mode: overlay;
+}
+
+/* ── Split Line Hero Animation ────────────────── */
+.split-line { overflow: hidden; display: block; }
+.split-line span {
+  display: block;
+  transform: translateY(108%);
+  transition: transform 1.2s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.hero-revealed .split-line span { transform: translateY(0); }
+
+/* ── Reveal on Scroll ─────────────────────────── */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s cubic-bezier(0.5, 0, 0, 1),
+              transform 0.8s cubic-bezier(0.5, 0, 0, 1);
+}
+.reveal.active { opacity: 1; transform: translateY(0); }
+.delay-100 { transition-delay: 0.10s; }
+.delay-200 { transition-delay: 0.20s; }
+.delay-300 { transition-delay: 0.30s; }
+.delay-400 { transition-delay: 0.40s; }
+.delay-500 { transition-delay: 0.50s; }
+.delay-600 { transition-delay: 0.60s; }
+
+/* ── Grid Texture ─────────────────────────────── */
+.grid-texture {
+  background-image:
+    linear-gradient(rgba(201,168,76,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(201,168,76,0.04) 1px, transparent 1px);
+  background-size: 72px 72px;
+}
+
+/* ── Photo container – responsive heights ─────── */
+.photo-container { height: 280px; }
+@media (min-width: 640px)  { .photo-container { height: 340px; } }
+@media (min-width: 1024px) { .photo-container { height: auto; aspect-ratio: 4 / 5; } }
+
+/* ── Photo frame floating animation ──────────────── */
+@keyframes float-frame {
+  0%   { transform: translateY(0px); }
+  50%  { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+.photo-frame-float {
+  animation: float-frame 6s ease-in-out infinite;
+}
+
+/* ── Offset decorative border behind photo ─────── */
+.photo-frame { position: relative; }
+.photo-frame::after {
+  content: '';
+  position: absolute;
+  top: 18px; right: -10px; bottom: -10px; left: 18px;
+  border: 1px solid rgba(201, 168, 76, 0.28);
+  border-radius: 20px;
+  pointer-events: none;
+  z-index: 0;
+  transition: border-color 0.5s;
+}
+.photo-frame:hover::after { border-color: rgba(201, 168, 76, 0.55); }
+
+/* ── Stat card – no vertical lift ─────────────── */
+.stat-card:hover { transform: none !important; }
+
+/* ── Hero entry: fade in + blur in ─────────────── */
+@keyframes hero-blur-in {
+  from {
+    opacity: 0;
+    filter: blur(28px);
+    transform: scale(1.015);
+  }
+  to {
+    opacity: 1;
+    filter: blur(0px);
+    transform: scale(1);
+  }
+}
+
+#hero-inner {
+  will-change: filter, opacity, transform;
+  animation: hero-blur-in 1.875s cubic-bezier(0.22, 1, 0.36, 1) 0.1s both;
+}
+
+/* ── Infinite testimonial scroll ────────────────── */
+@keyframes scroll-left {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+@keyframes scroll-right {
+  from { transform: translateX(-50%); }
+  to   { transform: translateX(0); }
+}
+.testimonial-track {
+  display: flex;
+  width: max-content;
+  gap: 1.25rem;
+}
+.testimonial-track-left  { animation: scroll-left  38s linear infinite; }
+.testimonial-track-right { animation: scroll-right 44s linear infinite; }
+.testimonial-track:hover { animation-play-state: paused; }
+.testimonial-mask {
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+  mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+}
+
+/* ── PI Monogram (nav logo) ────────────────────── */
+.pi-mark {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.02em;
+  background: linear-gradient(135deg, var(--gold-light), var(--gold), var(--gold-dark));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}

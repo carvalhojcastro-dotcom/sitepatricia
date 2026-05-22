@@ -1,0 +1,1238 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Patricia Inocêncio · Advogada</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link href="assets/css2_ac990486f183.css" rel="stylesheet" />
+
+  <!-- Icons -->
+  <script src="assets/iconify_654a1ef798a3.js"></script>
+
+  <!-- Tailwind Play CDN -->
+  <script src="assets/resource_3fa48481346f.js"></script>
+
+  <!-- Site styles -->
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body class="text-white selection:bg-[#C9A84C]/40 selection:text-white text-base">
+
+<!-- Custom Cursor -->
+<div id="cursor"></div>
+
+<!-- Noise Overlay -->
+<div class="noise-overlay"></div>
+
+<!-- ── Ambient Liquid Background ───────────────────────── -->
+<div class="fixed inset-0 overflow-hidden pointer-events-none z-[-1]">
+  <div class="liquid-blob"
+       style="background:#C9A84C;width:580px;height:580px;top:-200px;left:-160px;opacity:0.10;animation-duration:20s;"></div>
+  <div class="liquid-blob"
+       style="background:#8B5E1E;width:460px;height:460px;top:18%;right:-130px;opacity:0.10;animation-duration:26s;animation-delay:-9s;"></div>
+  <div class="liquid-blob"
+       style="background:#4A3520;width:860px;height:360px;bottom:-150px;left:8%;opacity:0.09;animation-duration:32s;animation-delay:-16s;"></div>
+</div>
+
+
+<!-- ══════════════════════════════════════════════════════
+     NAVIGATION
+     ══════════════════════════════════════════════════════ -->
+<nav class="fixed w-full z-[60] top-0 transition-all duration-300 py-4">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="glass-panel glass-static rounded-full px-6 py-3.5 flex items-center justify-between">
+
+      <!-- Brand -->
+      <a class="cursor-hover group flex items-center gap-3 flex-shrink-0" href="#">
+        <img src="img/logo.png" alt="Patricia Inocêncio"
+             class="h-10 w-auto flex-shrink-0 group-hover:scale-105 transition-transform duration-300"
+             style="filter: drop-shadow(0 0 10px rgba(201,168,76,0.35));" />
+        <div class="flex flex-col leading-none">
+          <span class="font-heading font-bold text-sm tracking-wide text-white">PATRICIA INOCÊNCIO</span>
+          <span class="text-[9px] font-normal uppercase tracking-[0.2em] mt-0.5"
+                style="color: rgba(201,168,76,0.55);">
+            Advocacia e Consultoria Jurídica
+          </span>
+        </div>
+      </a>
+
+      <!-- Links -->
+      <div class="hidden md:flex items-center gap-8">
+        <a class="cursor-hover text-[11px] font-medium uppercase tracking-[0.12em]
+                  text-white/50 hover:text-white transition-colors duration-300" href="#">Início</a>
+        <a class="cursor-hover text-[11px] font-medium uppercase tracking-[0.12em]
+                  text-white/50 hover:text-white transition-colors duration-300" href="#atuacao">Atuação</a>
+        <a class="cursor-hover text-[11px] font-medium uppercase tracking-[0.12em]
+                  text-white/50 hover:text-white transition-colors duration-300" href="#escritorio">Escritório</a>
+        <a class="cursor-hover text-[11px] font-medium uppercase tracking-[0.12em]
+                  text-white/50 hover:text-white transition-colors duration-300" href="#sobre">Sobre</a>
+        <a class="cursor-hover text-[11px] font-medium uppercase tracking-[0.12em]
+                  text-white/50 hover:text-white transition-colors duration-300" href="#depoimentos">Depoimentos</a>
+        <a class="cursor-hover text-[11px] font-medium uppercase tracking-[0.12em]
+                  text-white/50 hover:text-white transition-colors duration-300" href="#contato">Contato</a>
+      </div>
+
+      <!-- CTA -->
+      <div class="hidden md:block">
+        <a href="https://wa.me/5521998199997" target="_blank" rel="noopener noreferrer"
+           class="cursor-hover px-5 py-2.5 rounded-full
+                  text-[10px] font-bold uppercase tracking-widest text-[#181818]
+                  hover:text-white transition-all duration-300"
+           style="background: linear-gradient(135deg, var(--gold-light), var(--gold));
+                  box-shadow: 0 4px 20px rgba(201,168,76,0.35);">
+          Agendar
+        </a>
+      </div>
+
+      <!-- Mobile toggle -->
+      <button class="md:hidden text-white cursor-hover">
+        <span class="iconify" data-icon="lucide:menu" data-width="22"></span>
+      </button>
+
+    </div>
+  </div>
+</nav>
+
+
+<!-- ══════════════════════════════════════════════════════
+     HERO SECTION
+     ══════════════════════════════════════════════════════ -->
+<header class="relative min-h-screen w-full overflow-hidden flex items-center" id="hero">
+
+  <!-- Section index label -->
+  <div class="absolute top-28 left-6 md:left-12 z-20 hidden md:block">
+    <span class="glass-panel glass-static px-3 py-1 rounded
+                 text-[10px] font-mono uppercase tracking-widest border border-white/5"
+          style="color: rgba(201,168,76,0.5);">
+      [ INÍCIO ]
+    </span>
+  </div>
+
+  <!-- Grid texture -->
+  <div class="absolute inset-0 z-0 pointer-events-none grid-texture"></div>
+
+  <!-- Bottom page fade -->
+  <div class="absolute bottom-0 inset-x-0 h-44 pointer-events-none z-10"
+       style="background: linear-gradient(to top, var(--bg-page), transparent);"></div>
+
+  <!-- ── Main Layout ──────────────────────────────── -->
+  <div id="hero-inner" class="relative z-10 w-full max-w-7xl mx-auto px-6 py-32 lg:py-0
+              lg:min-h-screen lg:flex lg:items-center">
+
+    <div class="w-full grid grid-cols-1 lg:grid-cols-[1fr_420px] xl:grid-cols-[1fr_460px]
+                gap-12 lg:gap-16 xl:gap-24 items-center">
+
+      <!-- ─ LEFT: Copy ──────────────────────────────── -->
+      <div class="flex flex-col order-2 lg:order-1">
+
+        <!-- Eyebrow badge -->
+        <div class="reveal mb-7">
+          <div class="glass-panel glass-static inline-flex items-center gap-2.5 px-5 py-2 rounded-full">
+            <span class="w-1.5 h-1.5 rounded-full animate-pulse flex-shrink-0"
+                  style="background:var(--gold);box-shadow:0 0 10px var(--gold);"></span>
+            <span class="text-[10px] uppercase tracking-[0.22em] font-medium"
+                  style="color: rgba(201,168,76,0.85);">
+              OAB/RJ 232.012 · Barra da Tijuca
+            </span>
+          </div>
+        </div>
+
+        <!-- Headline with split-line animation -->
+        <h1 class="font-heading font-semibold tracking-tight text-white mb-8"
+            style="font-size: clamp(2.25rem, 4.2vw, 3.75rem); line-height: 1.06;">
+          <span class="split-line">
+            <span class="block">Segurança jurídica</span>
+          </span>
+          <span class="split-line">
+            <span class="block" style="transition-delay:110ms;">para proteger</span>
+          </span>
+          <span class="split-line">
+            <span class="block"
+                  style="transition-delay:210ms;
+                         background: linear-gradient(90deg, #D4B56A, #C9A84C, rgba(201,168,76,0.25));
+                         -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+                         background-clip: text;">
+              famílias e sucessões.
+            </span>
+          </span>
+        </h1>
+
+        <!-- Subheadline -->
+        <p class="reveal delay-200 text-white/45 leading-[1.78] mb-10 max-w-lg"
+           style="font-size: clamp(0.875rem, 1.35vw, 1.0rem);">
+          Atuação estratégica em Direito Imobiliário, Família e Sucessões para
+          <span class="text-white/75 pb-px"
+                style="border-bottom:1px solid rgba(201,168,76,0.45);">prevenção patrimonial</span>,
+          resolução de conflitos e
+          <span class="text-white/75 pb-px"
+                style="border-bottom:1px solid rgba(201,168,76,0.45);">organização sucessória</span>.
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="reveal delay-300 flex flex-wrap items-center gap-3 mb-12 lg:mb-14">
+
+          <!-- Primary CTA -->
+          <a href="https://wa.me/5521998199997" target="_blank" rel="noopener noreferrer"
+             class="cursor-hover group flex items-center gap-2.5 px-7 py-3.5 rounded-xl
+                    text-[11px] font-bold uppercase tracking-widest transition-all duration-300"
+             style="background: linear-gradient(135deg, var(--gold-light), var(--gold));
+                    color: #181818;
+                    box-shadow: 0 4px 28px rgba(201,168,76,0.40);"
+             onmouseover="this.style.background='white';this.style.color='#181818';"
+             onmouseout="this.style.background='linear-gradient(135deg,#D4B56A,#C9A84C)';this.style.color='#181818';">
+            <span class="iconify flex-shrink-0"
+                  data-icon="lucide:calendar-check-2" data-stroke-width="1.75" data-width="15"></span>
+            Agendar consulta
+          </a>
+
+          <!-- Secondary CTA -->
+          <button class="cursor-hover group flex items-center gap-2 px-6 py-3.5
+                         glass-panel glass-static border rounded-xl
+                         text-white/50 text-[11px] font-semibold uppercase tracking-widest
+                         hover:text-white transition-all duration-300"
+                  style="border-color: rgba(201,168,76,0.18);"
+                  onmouseover="this.style.borderColor='rgba(201,168,76,0.4)';"
+                  onmouseout="this.style.borderColor='rgba(201,168,76,0.18)';">
+            Conhecer a advogada
+            <span class="iconify group-hover:translate-x-0.5 transition-transform duration-200"
+                  data-icon="lucide:arrow-right" data-width="14"></span>
+          </button>
+
+        </div>
+
+        <!-- Trust indicators -->
+        <div class="reveal delay-400 grid grid-cols-3 gap-3" style="max-width:360px;">
+
+          <div class="glass-panel stat-card px-4 py-4 rounded-xl text-center">
+            <span class="block font-heading font-bold text-white text-[1.375rem] leading-none mb-1.5">+15</span>
+            <span class="block text-[9px] uppercase tracking-wider leading-snug"
+                  style="color: rgba(201,168,76,0.55);">
+              Anos de<br/>experiência
+            </span>
+          </div>
+
+          <div class="glass-panel stat-card px-4 py-4 rounded-xl text-center">
+            <span class="block font-heading font-bold text-white text-[1.375rem] leading-none mb-1.5">+500</span>
+            <span class="block text-[9px] uppercase tracking-wider leading-snug"
+                  style="color: rgba(201,168,76,0.55);">
+              Casos<br/>resolvidos
+            </span>
+          </div>
+
+          <div class="glass-panel stat-card px-4 py-4 rounded-xl text-center">
+            <span class="block font-heading font-bold text-[1.375rem] leading-none mb-1.5"
+                  style="color: var(--gold);">OAB</span>
+            <span class="block text-[9px] uppercase tracking-wider leading-snug"
+                  style="color: rgba(201,168,76,0.55);">
+              RJ 232.012
+            </span>
+          </div>
+
+        </div>
+
+      </div>
+      <!-- ─ /LEFT ──────────────────────────────────── -->
+
+
+      <!-- ─ RIGHT: Photo ───────────────────────────── -->
+      <div class="order-1 lg:order-2 flex justify-center lg:justify-end reveal delay-150">
+
+        <div class="photo-frame photo-frame-float relative w-full max-w-[480px] sm:max-w-[400px] lg:max-w-none">
+
+          <!-- Specialty chips — top-left -->
+          <div class="absolute -top-2 -left-3 z-20 flex flex-col gap-1.5">
+            <span class="glass-panel glass-static px-3 py-1.5 rounded-lg
+                         text-[9px] font-semibold uppercase tracking-wider"
+                  style="color:rgba(201,168,76,0.75);border-color:rgba(201,168,76,0.18);">
+              Inventários
+            </span>
+            <span class="glass-panel glass-static px-3 py-1.5 rounded-lg
+                         text-[9px] font-semibold uppercase tracking-wider"
+                  style="color:rgba(201,168,76,0.75);border-color:rgba(201,168,76,0.18);">
+              Contratos
+            </span>
+            <span class="glass-panel glass-static px-3 py-1.5 rounded-lg
+                         text-[9px] font-semibold uppercase tracking-wider"
+                  style="color:rgba(201,168,76,0.75);border-color:rgba(201,168,76,0.18);">
+              Divórcios
+            </span>
+          </div>
+
+          <!-- Photo -->
+          <div class="relative rounded-2xl overflow-hidden photo-container z-10"
+               style="background: linear-gradient(to bottom, #181818 0%, #181818 12%, transparent 50%)">
+            <img
+              src="img/herofoto.png"
+              alt="Patricia Inocêncio — Advogada especialista em Direito Imobiliário, Família e Sucessões"
+              class="w-full h-full object-cover"
+              style="object-position: center 12%;"
+            />
+            <div class="absolute inset-y-0 left-0 w-10 hidden lg:block"
+                 style="background: linear-gradient(to right, rgba(24,24,24,0.22), transparent);"></div>
+          </div>
+
+          <!-- Availability badge — bottom-right -->
+          <div class="absolute -bottom-3 -right-3 z-30
+                      glass-panel glass-static px-4 py-3.5 rounded-2xl"
+               style="box-shadow: 0 8px 30px rgba(0,0,0,0.5);">
+            <div class="flex items-center gap-2 mb-1">
+              <span class="w-1.5 h-1.5 rounded-full animate-pulse flex-shrink-0"
+                    style="background:#4ade80;box-shadow:0 0 6px #4ade80;"></span>
+              <span class="text-[9px] uppercase tracking-widest font-bold text-emerald-400">Disponível</span>
+            </div>
+            <p class="text-[11px] text-white/70 font-medium leading-tight">
+              Atendimento presencial<br/>e online · RJ
+            </p>
+          </div>
+
+        </div>
+      </div>
+      <!-- ─ /RIGHT ──────────────────────────────────── -->
+
+    </div>
+  </div>
+
+  <!-- Scroll indicator -->
+  <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 z-20 reveal delay-600">
+    <span class="text-[10px] uppercase tracking-[0.2em]"
+          style="color: rgba(201,168,76,0.45);">Rolar</span>
+    <div class="w-px h-12"
+         style="background: linear-gradient(to bottom, var(--gold), transparent);
+                opacity: 0.5;"></div>
+  </div>
+
+</header>
+
+
+<!-- ══════════════════════════════════════════════════════
+     SEGUNDA DOBRA — ATUAÇÃO
+     ══════════════════════════════════════════════════════ -->
+<section class="py-32 relative z-10" id="atuacao">
+
+  <!-- Section label -->
+  <div class="absolute top-0 left-6 md:left-12 z-20 hidden md:block -translate-y-1/2">
+    <span class="glass-panel glass-static px-3 py-1 rounded
+                 text-[10px] font-mono uppercase tracking-widest border border-white/5"
+          style="color: rgba(201,168,76,0.5);">
+      [ 01. ATUAÇÃO ]
+    </span>
+  </div>
+
+  <div class="absolute inset-0 pointer-events-none overflow-hidden z-0">
+    <div style="position:absolute;width:700px;height:300px;top:30%;left:50%;
+                transform:translateX(-50%);border-radius:50%;
+                background:#C9A84C;filter:blur(100px);opacity:0.04;"></div>
+  </div>
+
+  <div class="relative z-10 max-w-7xl mx-auto px-6">
+
+    <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-10 mb-20 reveal">
+
+      <div class="max-w-2xl">
+        <div class="inline-flex items-center gap-2.5 mb-6">
+          <div class="w-px h-5" style="background: linear-gradient(to bottom, var(--gold), transparent);"></div>
+          <span class="text-[10px] uppercase tracking-[0.25em] font-semibold"
+                style="color: rgba(201,168,76,0.75);">
+            Atuação estratégica e personalizada
+          </span>
+        </div>
+        <h2 class="font-heading font-semibold tracking-tight text-white mb-6"
+            style="font-size: clamp(1.875rem, 3.5vw, 3rem); line-height: 1.1;">
+          Cada patrimônio carrega<br/>
+          <span style="background: linear-gradient(90deg, #D4B56A, #C9A84C, rgba(201,168,76,0.3));
+                       -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+                       background-clip: text;">
+            uma história.
+          </span>
+        </h2>
+        <p class="text-white/38 font-medium" style="font-size: clamp(1rem, 1.5vw, 1.125rem); line-height: 1.6;">
+          E cada decisão jurídica impacta o futuro de uma família.
+        </p>
+      </div>
+
+      <div class="max-w-md lg:text-right">
+        <p class="text-white/45 leading-[1.8]" style="font-size: 0.9375rem;">
+          A atuação em Direito Imobiliário, Família e Sucessões exige mais do que
+          conhecimento técnico. Exige estratégia, clareza e sensibilidade.
+        </p>
+        <p class="text-white/35 leading-[1.8] mt-4" style="font-size: 0.9375rem;">
+          O foco do escritório é oferecer uma atuação sólida, tanto para prevenir
+          conflitos quanto para conduzir situações já estabelecidas com
+          <span class="text-white/60">clareza, firmeza e segurança.</span>
+        </p>
+      </div>
+
+    </div>
+
+    <div class="w-full h-px mb-20 reveal"
+         style="background: linear-gradient(to right, transparent, rgba(201,168,76,0.2), transparent);"></div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+      <div class="glass-panel p-8 rounded-2xl cursor-hover group reveal delay-100">
+        <div class="w-14 h-14 rounded-2xl flex items-center justify-center mb-7 shadow-inner border flex-shrink-0"
+             style="background: linear-gradient(135deg, rgba(201,168,76,0.12), transparent);
+                    border-color: rgba(201,168,76,0.18);">
+          <span class="iconify" data-icon="lucide:building-2" data-stroke-width="1.5" data-width="26"
+                style="color: var(--gold);"></span>
+        </div>
+        <h3 class="font-heading text-xl font-semibold text-white tracking-tight mb-3">Direito Imobiliário</h3>
+        <p class="text-white/40 leading-relaxed mb-6" style="font-size: 0.9375rem;">
+          Análise de contratos, due diligence, regularização de imóveis e assessoria
+          completa em transações e financiamentos.
+        </p>
+        <div class="flex flex-wrap gap-2 pt-5" style="border-top: 1px solid rgba(201,168,76,0.1);">
+          <span class="text-[9px] uppercase tracking-wider px-2.5 py-1 rounded-full"
+                style="color:rgba(201,168,76,0.6);background:rgba(201,168,76,0.07);border:1px solid rgba(201,168,76,0.12);">Contratos</span>
+          <span class="text-[9px] uppercase tracking-wider px-2.5 py-1 rounded-full"
+                style="color:rgba(201,168,76,0.6);background:rgba(201,168,76,0.07);border:1px solid rgba(201,168,76,0.12);">Regularização</span>
+          <span class="text-[9px] uppercase tracking-wider px-2.5 py-1 rounded-full"
+                style="color:rgba(201,168,76,0.6);background:rgba(201,168,76,0.07);border:1px solid rgba(201,168,76,0.12);">Due diligence</span>
+        </div>
+      </div>
+
+      <div class="glass-panel p-8 rounded-2xl cursor-hover group reveal delay-200 relative overflow-hidden">
+        <div class="absolute inset-0 pointer-events-none"
+             style="background: linear-gradient(135deg, rgba(201,168,76,0.06) 0%, transparent 60%);"></div>
+        <div class="w-14 h-14 rounded-2xl flex items-center justify-center mb-7 shadow-inner border flex-shrink-0 relative z-10"
+             style="background: linear-gradient(135deg, rgba(201,168,76,0.18), rgba(201,168,76,0.04));
+                    border-color: rgba(201,168,76,0.28);">
+          <span class="iconify" data-icon="lucide:users" data-stroke-width="1.5" data-width="26"
+                style="color: var(--gold);"></span>
+        </div>
+        <h3 class="font-heading text-xl font-semibold text-white tracking-tight mb-3 relative z-10">Direito de Família</h3>
+        <p class="text-white/40 leading-relaxed mb-6 relative z-10" style="font-size: 0.9375rem;">
+          Divórcio, guarda de filhos, reconhecimento de paternidade,
+          dissolução de união estável e contratos de relacionamento.
+        </p>
+        <div class="flex flex-wrap gap-2 pt-5 relative z-10" style="border-top: 1px solid rgba(201,168,76,0.12);">
+          <span class="text-[9px] uppercase tracking-wider px-2.5 py-1 rounded-full"
+                style="color:rgba(201,168,76,0.6);background:rgba(201,168,76,0.07);border:1px solid rgba(201,168,76,0.15);">Divórcio</span>
+          <span class="text-[9px] uppercase tracking-wider px-2.5 py-1 rounded-full"
+                style="color:rgba(201,168,76,0.6);background:rgba(201,168,76,0.07);border:1px solid rgba(201,168,76,0.15);">Guarda</span>
+          <span class="text-[9px] uppercase tracking-wider px-2.5 py-1 rounded-full"
+                style="color:rgba(201,168,76,0.6);background:rgba(201,168,76,0.07);border:1px solid rgba(201,168,76,0.15);">Contratos</span>
+        </div>
+      </div>
+
+      <div class="glass-panel p-8 rounded-2xl cursor-hover group reveal delay-300">
+        <div class="w-14 h-14 rounded-2xl flex items-center justify-center mb-7 shadow-inner border flex-shrink-0"
+             style="background: linear-gradient(135deg, rgba(201,168,76,0.12), transparent);
+                    border-color: rgba(201,168,76,0.18);">
+          <span class="iconify" data-icon="lucide:scroll-text" data-stroke-width="1.5" data-width="26"
+                style="color: var(--gold);"></span>
+        </div>
+        <h3 class="font-heading text-xl font-semibold text-white tracking-tight mb-3">Sucessões e Inventários</h3>
+        <p class="text-white/40 leading-relaxed mb-6" style="font-size: 0.9375rem;">
+          Inventários judiciais e extrajudiciais, planejamento sucessório,
+          elaboração de testamentos e partilha de bens.
+        </p>
+        <div class="flex flex-wrap gap-2 pt-5" style="border-top: 1px solid rgba(201,168,76,0.1);">
+          <span class="text-[9px] uppercase tracking-wider px-2.5 py-1 rounded-full"
+                style="color:rgba(201,168,76,0.6);background:rgba(201,168,76,0.07);border:1px solid rgba(201,168,76,0.12);">Inventários</span>
+          <span class="text-[9px] uppercase tracking-wider px-2.5 py-1 rounded-full"
+                style="color:rgba(201,168,76,0.6);background:rgba(201,168,76,0.07);border:1px solid rgba(201,168,76,0.12);">Testamentos</span>
+          <span class="text-[9px] uppercase tracking-wider px-2.5 py-1 rounded-full"
+                style="color:rgba(201,168,76,0.6);background:rgba(201,168,76,0.07);border:1px solid rgba(201,168,76,0.12);">Partilha</span>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════════════════
+     TERCEIRA DOBRA — ESCRITÓRIO
+     ══════════════════════════════════════════════════════ -->
+<section class="py-32 relative z-10" id="escritorio">
+
+  <div class="absolute top-0 left-6 md:left-12 z-20 hidden md:block -translate-y-1/2">
+    <span class="glass-panel glass-static px-3 py-1 rounded
+                 text-[10px] font-mono uppercase tracking-widest border border-white/5"
+          style="color: rgba(201,168,76,0.5);">
+      [ 02. ESCRITÓRIO ]
+    </span>
+  </div>
+
+  <div class="absolute inset-0 pointer-events-none overflow-hidden z-0">
+    <div style="position:absolute;width:700px;height:400px;bottom:5%;right:-180px;
+                border-radius:50%;background:#C9A84C;filter:blur(120px);opacity:0.045;"></div>
+  </div>
+
+  <div class="relative z-10 max-w-7xl mx-auto px-6">
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center mb-20 lg:mb-28">
+
+      <div class="reveal lg:order-2">
+        <div class="inline-flex items-center gap-2.5 mb-7">
+          <div class="w-px h-5" style="background: linear-gradient(to bottom, var(--gold), transparent);"></div>
+          <span class="text-[10px] uppercase tracking-[0.25em] font-semibold"
+                style="color: rgba(201,168,76,0.75);">Atendimento jurídico</span>
+        </div>
+        <h2 class="font-heading font-semibold tracking-tight text-white mb-8"
+            style="font-size: clamp(1.875rem, 3.1vw, 2.625rem); line-height: 1.13;">
+          Estrutura pensada para oferecer
+          <span style="background: linear-gradient(90deg, #D4B56A, #C9A84C, rgba(201,168,76,0.3));
+                       -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+                       background-clip: text;">
+            discrição, conforto e segurança
+          </span>
+          em cada atendimento.
+        </h2>
+        <p class="text-white/42 leading-[1.82] mb-10" style="font-size: 0.9375rem;">
+          O escritório está localizado na Barra da Tijuca, em um ambiente planejado
+          para garantir sigilo, conforto e acolhimento. Cada atendimento é conduzido de
+          forma personalizada e estratégica — presencialmente ou online, para clientes
+          em todo o Brasil.
+        </p>
+        <div class="space-y-2.5">
+          <div class="flex items-center gap-4 glass-panel glass-static px-5 py-3.5 rounded-xl">
+            <div class="flex-shrink-0 w-8 h-8 rounded-lg flex items-center justify-center"
+                 style="background:rgba(201,168,76,0.1);border:1px solid rgba(201,168,76,0.2);">
+              <span class="iconify" data-icon="lucide:map-pin" data-width="15" style="color:var(--gold);"></span>
+            </div>
+            <div>
+              <span class="block text-[10px] uppercase tracking-widest font-semibold mb-0.5"
+                    style="color:rgba(201,168,76,0.6);">Localização</span>
+              <span class="text-white/55 text-sm">Av. das Américas, 2480 — Barra da Tijuca, Rio de Janeiro - RJ, 22640-101</span>
+            </div>
+          </div>
+          <div class="flex items-center gap-4 glass-panel glass-static px-5 py-3.5 rounded-xl">
+            <div class="flex-shrink-0 w-8 h-8 rounded-lg flex items-center justify-center"
+                 style="background:rgba(201,168,76,0.1);border:1px solid rgba(201,168,76,0.2);">
+              <span class="iconify" data-icon="lucide:globe" data-width="15" style="color:var(--gold);"></span>
+            </div>
+            <div>
+              <span class="block text-[10px] uppercase tracking-widest font-semibold mb-0.5"
+                    style="color:rgba(201,168,76,0.6);">Atendimento online</span>
+              <span class="text-white/55 text-sm">Para todo o Brasil</span>
+            </div>
+          </div>
+          <div class="flex items-center gap-4 glass-panel glass-static px-5 py-3.5 rounded-xl">
+            <div class="flex-shrink-0 w-8 h-8 rounded-lg flex items-center justify-center"
+                 style="background:rgba(201,168,76,0.1);border:1px solid rgba(201,168,76,0.2);">
+              <span class="iconify" data-icon="lucide:calendar-check" data-width="15" style="color:var(--gold);"></span>
+            </div>
+            <div>
+              <span class="block text-[10px] uppercase tracking-widest font-semibold mb-0.5"
+                    style="color:rgba(201,168,76,0.6);">Atendimento presencial</span>
+              <span class="text-white/55 text-sm">Com horário agendado previamente</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal delay-200 lg:order-1">
+        <div class="relative rounded-2xl overflow-hidden group"
+             style="border: 1px solid rgba(201,168,76,0.15);
+                    box-shadow: 0 28px 90px rgba(0,0,0,0.55);">
+          <img src="img/lead.jpg"
+               alt="Lead Americas Business — Barra da Tijuca, Rio de Janeiro"
+               class="w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
+               style="aspect-ratio: 4/3;" />
+          <div class="absolute inset-0 pointer-events-none"
+               style="background: linear-gradient(to bottom, rgba(24,24,24,0.45) 0%, transparent 35%), linear-gradient(to top, rgba(24,24,24,0.45) 0%, transparent 40%);"></div>
+          <div class="absolute top-5 left-6">
+            <p class="text-[10px] uppercase tracking-[0.2em] font-medium mb-0.5"
+               style="color:rgba(201,168,76,0.7);">Lead Americas · Av. das Américas, 2480</p>
+            <p class="text-white/35 text-[10px] tracking-wide">Barra da Tijuca · Rio de Janeiro - RJ · 22640-101</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="w-full h-px mb-20 lg:mb-24 reveal"
+         style="background: linear-gradient(to right, transparent, rgba(201,168,76,0.18), transparent);"></div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-5 lg:gap-6">
+
+      <div class="reveal delay-100 relative rounded-2xl overflow-hidden group cursor-hover"
+           style="border: 1px solid rgba(201,168,76,0.12);box-shadow: 0 16px 60px rgba(0,0,0,0.45);aspect-ratio: 4/3;">
+        <img src="img/escritorio1.jpg" alt="Advogada Patricia Inocêncio — Sala de atendimento"
+             class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.04]" />
+        <div class="absolute inset-0 pointer-events-none"
+             style="background: linear-gradient(to top, rgba(24,24,24,0.65) 0%, rgba(24,24,24,0.08) 45%, transparent 70%);"></div>
+        <div class="absolute bottom-5 left-6">
+          <p class="text-white/55 text-[10px] uppercase tracking-[0.18em] font-medium">Sala de atendimento</p>
+        </div>
+      </div>
+
+      <div class="reveal delay-200 relative rounded-2xl overflow-hidden group cursor-hover"
+           style="border: 1px solid rgba(201,168,76,0.12);box-shadow: 0 16px 60px rgba(0,0,0,0.45);aspect-ratio: 4/3;">
+        <img src="img/escritorio2.jpg" alt="Escritório Patricia Inocêncio — Ambiente interno"
+             class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.04]" />
+        <div class="absolute inset-0 pointer-events-none"
+             style="background: linear-gradient(to top, rgba(24,24,24,0.65) 0%, rgba(24,24,24,0.08) 45%, transparent 70%);"></div>
+        <div class="absolute bottom-5 left-6">
+          <p class="text-white/55 text-[10px] uppercase tracking-[0.18em] font-medium">Ambiente interno</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════════════════
+     QUARTA DOBRA — SOBRE
+     ══════════════════════════════════════════════════════ -->
+<section class="py-32 relative z-10" id="sobre">
+
+  <div class="absolute top-0 left-6 md:left-12 z-20 hidden md:block -translate-y-1/2">
+    <span class="glass-panel glass-static px-3 py-1 rounded
+                 text-[10px] font-mono uppercase tracking-widest border border-white/5"
+          style="color: rgba(201,168,76,0.5);">
+      [ 03. SOBRE ]
+    </span>
+  </div>
+
+  <div class="absolute inset-0 pointer-events-none overflow-hidden z-0">
+    <div style="position:absolute;width:820px;height:500px;top:5%;left:-260px;
+                border-radius:50%;background:#C9A84C;filter:blur(130px);opacity:0.04;"></div>
+  </div>
+
+  <div class="absolute inset-0 flex items-center justify-center pointer-events-none z-0 overflow-hidden select-none">
+    <span class="font-heading font-black text-white"
+          style="font-size:clamp(7rem,22vw,18rem);opacity:0.016;letter-spacing:-0.04em;
+                 white-space:nowrap;line-height:1;user-select:none;">PATRICIA</span>
+  </div>
+
+  <div class="relative z-10 max-w-7xl mx-auto px-6">
+
+    <div class="mb-16 lg:mb-20 reveal">
+      <div class="inline-flex items-center gap-2.5 mb-6">
+        <div class="w-px h-5" style="background: linear-gradient(to bottom, var(--gold), transparent);"></div>
+        <span class="text-[10px] uppercase tracking-[0.25em] font-semibold"
+              style="color: rgba(201,168,76,0.75);">Sobre a Dra. Patricia Inocêncio</span>
+      </div>
+      <h2 class="font-heading font-semibold tracking-tight text-white"
+          style="font-size: clamp(1.875rem, 3.5vw, 3rem); line-height: 1.1; max-width: 38ch;">
+        Uma advocacia construída com
+        <span style="background: linear-gradient(90deg, #D4B56A, #C9A84C, rgba(201,168,76,0.3));
+                     -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+                     background-clip: text;">
+          estratégia, clareza
+        </span>
+        e responsabilidade patrimonial.
+      </h2>
+    </div>
+
+    <div class="w-full h-px mb-16 lg:mb-20 reveal"
+         style="background: linear-gradient(to right, transparent, rgba(201,168,76,0.18), transparent);"></div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-[1fr_380px] xl:grid-cols-[1fr_420px]
+                gap-16 lg:gap-24 items-start mb-20">
+
+      <div class="space-y-7 reveal">
+
+        <p class="text-white/48 leading-[1.88]" style="font-size: 0.9375rem;">
+          Patricia Inocêncio é advogada com
+          <span class="text-white/78 pb-px" style="border-bottom: 1px solid rgba(201,168,76,0.35);">mais de 15 anos de atuação</span>,
+          formada pela
+          <span class="text-white/78 pb-px" style="border-bottom: 1px solid rgba(201,168,76,0.35);">Universidade Veiga de Almeida</span>
+          e especialista pela
+          <span class="text-white/78 pb-px" style="border-bottom: 1px solid rgba(201,168,76,0.35);">PUC/RJ</span>,
+          com atuação voltada para questões patrimoniais, sucessórias e familiares.
+        </p>
+
+        <p class="text-white/48 leading-[1.88]" style="font-size: 0.9375rem;">
+          Possui ampla experiência na condução de inventários, regularização de imóveis e
+          organização patrimonial, atuando de forma estratégica em situações que exigem
+          <span class="text-white/72">segurança jurídica, discrição e atenção individualizada</span>.
+        </p>
+
+        <blockquote class="py-6 my-4 reveal"
+                    style="border-top: 1px solid rgba(201,168,76,0.15);
+                           border-bottom: 1px solid rgba(201,168,76,0.15);">
+          <p class="font-heading font-medium leading-relaxed"
+             style="font-size: clamp(1.125rem, 1.9vw, 1.3125rem);
+                    color: rgba(255,255,255,0.72);
+                    font-style: italic;">
+            "Técnica, clareza e sensibilidade na condução de decisões que impactam
+            patrimônio, relações familiares e planejamento de futuro."
+          </p>
+        </blockquote>
+
+        <p class="text-white/48 leading-[1.88]" style="font-size: 0.9375rem;">
+          Sua atuação combina rigor técnico com escuta ativa, entendendo que cada caso
+          envolve não apenas questões jurídicas, mas também decisões que moldam o
+          futuro de famílias inteiras.
+        </p>
+
+        <div class="glass-panel p-6 rounded-2xl cursor-hover reveal delay-200 mt-4"
+             style="border-top-color: rgba(201,168,76,0.22);">
+          <div class="flex items-start gap-5">
+            <div class="flex-shrink-0 w-11 h-11 rounded-xl flex items-center justify-center mt-0.5"
+                 style="background: rgba(201,168,76,0.1); border: 1px solid rgba(201,168,76,0.22);">
+              <span class="iconify" data-icon="lucide:book-open" data-width="18" style="color: var(--gold);"></span>
+            </div>
+            <div>
+              <div class="text-[10px] uppercase tracking-[0.2em] font-semibold mb-2"
+                   style="color: rgba(201,168,76,0.6);">Publicação acadêmica</div>
+              <p class="text-white/75 font-medium leading-snug mb-2.5" style="font-size: 0.875rem;">
+                "A análise da efetividade das diretivas de vontade do paciente no sistema
+                jurídico brasileiro"
+              </p>
+              <p class="text-white/30 text-xs tracking-wide">
+                Direito, Pesquisa e Sociedade · Editora Lumen Juris
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="reveal delay-150 flex justify-center lg:justify-end">
+        <div class="photo-frame photo-frame-float relative w-full max-w-[480px]">
+
+          <div class="absolute -top-3 -right-3 z-20 glass-panel glass-static px-4 py-3 rounded-2xl"
+               style="box-shadow: 0 8px 30px rgba(0,0,0,0.5);">
+            <div class="text-[10px] uppercase tracking-widest font-bold leading-none mb-1"
+                 style="color: var(--gold);">OAB/RJ</div>
+            <div class="text-white/45 text-[10px] font-medium">232.012</div>
+          </div>
+
+          <div class="relative rounded-2xl overflow-hidden z-10"
+               style="background: linear-gradient(to bottom, #181818 0%, #181818 10%, transparent 50%);
+                      border: 1px solid rgba(201,168,76,0.14);
+                      box-shadow: 0 28px 80px rgba(0,0,0,0.55);">
+            <img src="img/foto5.jpg"
+                 alt="Dra. Patricia Inocêncio — Advogada especialista"
+                 class="w-full object-cover"
+                 style="object-position: center 35%; aspect-ratio: 3/4;" />
+          </div>
+
+          <div class="absolute -bottom-3 -left-3 z-20 glass-panel glass-static px-4 py-3.5 rounded-2xl"
+               style="box-shadow: 0 8px 30px rgba(0,0,0,0.5);">
+            <div class="flex items-center gap-2 mb-1">
+              <span class="w-1.5 h-1.5 rounded-full flex-shrink-0"
+                    style="background:var(--gold);box-shadow:0 0 6px var(--gold);"></span>
+              <span class="text-[9px] uppercase tracking-widest font-bold"
+                    style="color:rgba(201,168,76,0.75);">Especialização</span>
+            </div>
+            <p class="text-white/60 text-[11px] font-medium leading-tight">
+              PUC/RJ · Direito Civil<br/>e Processual Civil
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <div class="grid grid-cols-2 lg:grid-cols-5 gap-4">
+
+      <div class="glass-panel px-5 py-6 rounded-2xl cursor-hover reveal delay-100">
+        <div class="w-9 h-9 rounded-lg flex items-center justify-center mb-4"
+             style="background:rgba(201,168,76,0.1);border:1px solid rgba(201,168,76,0.18);">
+          <span class="iconify" data-icon="lucide:briefcase" data-width="16" style="color:var(--gold);"></span>
+        </div>
+        <div class="text-[10px] uppercase tracking-widest font-semibold mb-1.5"
+             style="color:rgba(201,168,76,0.6);">Experiência</div>
+        <p class="text-white/60 text-sm leading-snug">+15 anos<br/>de atuação</p>
+      </div>
+
+      <div class="glass-panel px-5 py-6 rounded-2xl cursor-hover reveal delay-100">
+        <div class="w-9 h-9 rounded-lg flex items-center justify-center mb-4"
+             style="background:rgba(201,168,76,0.1);border:1px solid rgba(201,168,76,0.18);">
+          <span class="iconify" data-icon="lucide:graduation-cap" data-width="16" style="color:var(--gold);"></span>
+        </div>
+        <div class="text-[10px] uppercase tracking-widest font-semibold mb-1.5"
+             style="color:rgba(201,168,76,0.6);">Formação</div>
+        <p class="text-white/60 text-sm leading-snug">Universidade<br/>Veiga de Almeida</p>
+      </div>
+
+      <div class="glass-panel px-5 py-6 rounded-2xl cursor-hover reveal delay-200">
+        <div class="w-9 h-9 rounded-lg flex items-center justify-center mb-4"
+             style="background:rgba(201,168,76,0.1);border:1px solid rgba(201,168,76,0.18);">
+          <span class="iconify" data-icon="lucide:award" data-width="16" style="color:var(--gold);"></span>
+        </div>
+        <div class="text-[10px] uppercase tracking-widest font-semibold mb-1.5"
+             style="color:rgba(201,168,76,0.6);">Especialização</div>
+        <p class="text-white/60 text-sm leading-snug">PUC/RJ · Direito<br/>Civil e Processual</p>
+      </div>
+
+      <div class="glass-panel px-5 py-6 rounded-2xl cursor-hover reveal delay-300">
+        <div class="w-9 h-9 rounded-lg flex items-center justify-center mb-4"
+             style="background:rgba(201,168,76,0.1);border:1px solid rgba(201,168,76,0.18);">
+          <span class="iconify" data-icon="lucide:scale" data-width="16" style="color:var(--gold);"></span>
+        </div>
+        <div class="text-[10px] uppercase tracking-widest font-semibold mb-1.5"
+             style="color:rgba(201,168,76,0.6);">Inscrição</div>
+        <p class="text-white/60 text-sm leading-snug">OAB/RJ<br/>232.012</p>
+      </div>
+
+      <div class="glass-panel px-5 py-6 rounded-2xl cursor-hover reveal delay-400">
+        <div class="w-9 h-9 rounded-lg flex items-center justify-center mb-4"
+             style="background:rgba(201,168,76,0.1);border:1px solid rgba(201,168,76,0.18);">
+          <span class="iconify" data-icon="lucide:book-open" data-width="16" style="color:var(--gold);"></span>
+        </div>
+        <div class="text-[10px] uppercase tracking-widest font-semibold mb-1.5"
+             style="color:rgba(201,168,76,0.6);">Publicação</div>
+        <p class="text-white/60 text-sm leading-snug">Editora<br/>Lumen Juris</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════════════════
+     QUINTA DOBRA — DEPOIMENTOS
+     ══════════════════════════════════════════════════════ -->
+<section class="py-32 relative z-10" id="depoimentos">
+
+  <div class="absolute top-8 left-6 md:left-12 z-20 hidden md:block">
+    <span class="glass-panel glass-static px-3 py-1 rounded
+                 text-[10px] font-mono uppercase tracking-widest border border-white/5"
+          style="color: rgba(201,168,76,0.5);">
+      [ 04. DEPOIMENTOS ]
+    </span>
+  </div>
+
+  <div class="absolute inset-0 pointer-events-none z-0">
+    <div style="position:absolute;width:700px;height:350px;top:30%;left:50%;transform:translateX(-50%);
+                border-radius:50%;background:#C9A84C;filter:blur(120px);opacity:0.04;"></div>
+  </div>
+
+  <div class="relative z-10 max-w-7xl mx-auto px-6 mb-16 reveal">
+    <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-8">
+      <div>
+        <div class="inline-flex items-center gap-2.5 mb-6">
+          <div class="w-px h-5" style="background: linear-gradient(to bottom, var(--gold), transparent);"></div>
+          <span class="text-[10px] uppercase tracking-[0.25em] font-semibold"
+                style="color: rgba(201,168,76,0.75);">O que dizem os clientes</span>
+        </div>
+        <h2 class="font-heading font-semibold tracking-tight text-white"
+            style="font-size: clamp(1.875rem, 3.2vw, 2.75rem); line-height: 1.1;">
+          Resultados que
+          <span style="background: linear-gradient(90deg, #D4B56A, #C9A84C, rgba(201,168,76,0.3));
+                       -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+                       background-clip: text;">geram confiança.</span>
+        </h2>
+      </div>
+      <div class="glass-panel glass-static flex items-center gap-5 px-6 py-4 rounded-2xl flex-shrink-0">
+        <div>
+          <div class="flex items-center gap-1 mb-1">
+            <span style="color:#F5C518;font-size:1.125rem;">★★★★★</span>
+          </div>
+          <p class="text-[10px] uppercase tracking-widest font-semibold"
+             style="color:rgba(201,168,76,0.6);">Avaliação Google</p>
+        </div>
+        <div style="width:1px;height:36px;background:rgba(201,168,76,0.18);"></div>
+        <div>
+          <span class="font-heading font-bold text-white text-2xl">5,0</span>
+          <p class="text-white/35 text-[10px] mt-0.5">nota máxima</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Faixa 1: scroll para a esquerda -->
+  <div class="relative z-10 mb-5 testimonial-mask overflow-hidden">
+    <div class="testimonial-track testimonial-track-left">
+
+      <!-- CONJUNTO A -->
+      <div class="glass-panel flex-shrink-0 w-[480px] p-6 rounded-2xl cursor-hover">
+        <div class="flex items-center gap-3 mb-4">
+          <img src="img/gabriela.jpeg" alt="Gabriela Dias" class="w-10 h-10 rounded-full object-cover flex-shrink-0" />
+          <div><p class="text-white font-semibold text-sm leading-none mb-0.5">Gabriela Dias</p>
+          <p class="text-white/35 text-[10px]">6 meses atrás</p></div>
+          <div class="ml-auto flex-shrink-0"><span style="color:#F5C518;font-size:0.75rem;">★★★★★</span></div>
+        </div>
+        <p class="text-white/52 text-sm leading-relaxed">
+          "Adoramos o trabalho da Dra. Patrícia! Ela resolveu o inventário com rapidez, foi sempre
+          clara na comunicação e respeitou nosso tempo. Um trabalho excelente, competente e muito
+          humanizado. Indicamos sem nenhuma dúvida!"
+        </p>
+      </div>
+
+      <div class="glass-panel flex-shrink-0 w-[520px] p-6 rounded-2xl cursor-hover">
+        <div class="flex items-center gap-3 mb-4">
+          <img src="img/patricia-leite.jpeg" alt="Patrícia Leite" class="w-10 h-10 rounded-full object-cover flex-shrink-0" />
+          <div><p class="text-white font-semibold text-sm leading-none mb-0.5">Patrícia Leite</p>
+          <p class="text-white/35 text-[10px]">4 meses atrás</p></div>
+          <div class="ml-auto flex-shrink-0"><span style="color:#F5C518;font-size:0.75rem;">★★★★★</span></div>
+        </div>
+        <p class="text-white/52 text-sm leading-relaxed">
+          "Gentileza, respeito, imparcialidade, ética, segurança, rapidez e o feedback em cada etapa
+          nortearam este contrato advocatício. Em exatamente 30 dias, uma escritura de
+          espólio/inventário foi concluída — uma satisfação indescritível."
+        </p>
+      </div>
+
+      <div class="glass-panel flex-shrink-0 w-[460px] p-6 rounded-2xl cursor-hover">
+        <div class="flex items-center gap-3 mb-4">
+          <img src="img/andre.jpeg" alt="André dos Santos Barbosa" class="w-10 h-10 rounded-full object-cover flex-shrink-0" />
+          <div><p class="text-white font-semibold text-sm leading-none mb-0.5">André dos Santos Barbosa</p>
+          <p class="text-white/35 text-[10px]">6 meses atrás</p></div>
+          <div class="ml-auto flex-shrink-0"><span style="color:#F5C518;font-size:0.75rem;">★★★★★</span></div>
+        </div>
+        <p class="text-white/52 text-sm leading-relaxed">
+          "A Dra. Patricia foi muito competente, sempre explicando tudo de forma clara e objetiva,
+          sempre à disposição para tirar dúvidas. Super recomendo essa profissional de tamanho
+          conhecimento."
+        </p>
+      </div>
+
+      <div class="glass-panel flex-shrink-0 w-[480px] p-6 rounded-2xl cursor-hover"
+           style="border-top-color: rgba(201,168,76,0.28);">
+        <div class="flex items-center gap-3 mb-4">
+          <img src="img/elaine.jpeg" alt="Elaine Vital" class="w-10 h-10 rounded-full object-cover flex-shrink-0" />
+          <div><p class="text-white font-semibold text-sm leading-none mb-0.5">Elaine Vital</p>
+          <p class="text-white/35 text-[10px]">6 meses atrás</p></div>
+          <div class="ml-auto flex-shrink-0"><span style="color:#F5C518;font-size:0.75rem;">★★★★★</span></div>
+        </div>
+        <p class="text-white/52 text-sm leading-relaxed">
+          "Patrícia foi uma profissional extremamente eficiente desde o primeiro contato até a
+          finalização do processo! Estou impressionada com a agilidade que resolveu tudo.
+          Só elogios."
+        </p>
+      </div>
+
+      <!-- CONJUNTO B — duplicata para loop -->
+      <div class="glass-panel flex-shrink-0 w-[480px] p-6 rounded-2xl cursor-hover">
+        <div class="flex items-center gap-3 mb-4">
+          <img src="img/gabriela.jpeg" alt="Gabriela Dias" class="w-10 h-10 rounded-full object-cover flex-shrink-0" />
+          <div><p class="text-white font-semibold text-sm leading-none mb-0.5">Gabriela Dias</p>
+          <p class="text-white/35 text-[10px]">6 meses atrás</p></div>
+          <div class="ml-auto flex-shrink-0"><span style="color:#F5C518;font-size:0.75rem;">★★★★★</span></div>
+        </div>
+        <p class="text-white/52 text-sm leading-relaxed">
+          "Adoramos o trabalho da Dra. Patrícia! Ela resolveu o inventário com rapidez, foi sempre
+          clara na comunicação e respeitou nosso tempo. Um trabalho excelente, competente e muito
+          humanizado. Indicamos sem nenhuma dúvida!"
+        </p>
+      </div>
+
+      <div class="glass-panel flex-shrink-0 w-[520px] p-6 rounded-2xl cursor-hover">
+        <div class="flex items-center gap-3 mb-4">
+          <img src="img/patricia-leite.jpeg" alt="Patrícia Leite" class="w-10 h-10 rounded-full object-cover flex-shrink-0" />
+          <div><p class="text-white font-semibold text-sm leading-none mb-0.5">Patrícia Leite</p>
+          <p class="text-white/35 text-[10px]">4 meses atrás</p></div>
+          <div class="ml-auto flex-shrink-0"><span style="color:#F5C518;font-size:0.75rem;">★★★★★</span></div>
+        </div>
+        <p class="text-white/52 text-sm leading-relaxed">
+          "Gentileza, respeito, imparcialidade, ética, segurança, rapidez e o feedback em cada etapa
+          nortearam este contrato advocatício. Em exatamente 30 dias, uma escritura de
+          espólio/inventário foi concluída — uma satisfação indescritível."
+        </p>
+      </div>
+
+      <div class="glass-panel flex-shrink-0 w-[460px] p-6 rounded-2xl cursor-hover">
+        <div class="flex items-center gap-3 mb-4">
+          <img src="img/andre.jpeg" alt="André dos Santos Barbosa" class="w-10 h-10 rounded-full object-cover flex-shrink-0" />
+          <div><p class="text-white font-semibold text-sm leading-none mb-0.5">André dos Santos Barbosa</p>
+          <p class="text-white/35 text-[10px]">6 meses atrás</p></div>
+          <div class="ml-auto flex-shrink-0"><span style="color:#F5C518;font-size:0.75rem;">★★★★★</span></div>
+        </div>
+        <p class="text-white/52 text-sm leading-relaxed">
+          "A Dra. Patricia foi muito competente, sempre explicando tudo de forma clara e objetiva,
+          sempre à disposição para tirar dúvidas. Super recomendo essa profissional de tamanho
+          conhecimento."
+        </p>
+      </div>
+
+      <div class="glass-panel flex-shrink-0 w-[480px] p-6 rounded-2xl cursor-hover"
+           style="border-top-color: rgba(201,168,76,0.28);">
+        <div class="flex items-center gap-3 mb-4">
+          <img src="img/elaine.jpeg" alt="Elaine Vital" class="w-10 h-10 rounded-full object-cover flex-shrink-0" />
+          <div><p class="text-white font-semibold text-sm leading-none mb-0.5">Elaine Vital</p>
+          <p class="text-white/35 text-[10px]">6 meses atrás</p></div>
+          <div class="ml-auto flex-shrink-0"><span style="color:#F5C518;font-size:0.75rem;">★★★★★</span></div>
+        </div>
+        <p class="text-white/52 text-sm leading-relaxed">
+          "Patrícia foi uma profissional extremamente eficiente desde o primeiro contato até a
+          finalização do processo! Estou impressionada com a agilidade que resolveu tudo.
+          Só elogios."
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Faixa 2: scroll para a direita -->
+  <div class="relative z-10 testimonial-mask overflow-hidden">
+    <div class="testimonial-track testimonial-track-right">
+
+      <!-- CONJUNTO A -->
+      <div class="glass-panel flex-shrink-0 w-[490px] p-6 rounded-2xl cursor-hover">
+        <div class="flex items-center gap-3 mb-4">
+          <img src="img/rosane.jpeg" alt="Rosane Machado" class="w-10 h-10 rounded-full object-cover flex-shrink-0" />
+          <div><p class="text-white font-semibold text-sm leading-none mb-0.5">Rosane Machado</p>
+          <p class="text-white/35 text-[10px]">7 meses atrás</p></div>
+          <div class="ml-auto flex-shrink-0"><span style="color:#F5C518;font-size:0.75rem;">★★★★★</span></div>
+        </div>
+        <p class="text-white/52 text-sm leading-relaxed">
+          "Gostaria de agradecer a Dra. Patrícia pela atenção, eficiência e agilidade na resolução
+          do inventário. Parabéns por ser uma excelente profissional. Ficamos muito satisfeitos e
+          recomendamos fortemente o seu trabalho!"
+        </p>
+      </div>
+
+      <div class="glass-panel flex-shrink-0 w-[480px] p-6 rounded-2xl cursor-hover"
+           style="border-top-color: rgba(201,168,76,0.28);">
+        <div class="flex items-center gap-3 mb-4">
+          <img src="img/val.jpeg" alt="Val Andrade" class="w-10 h-10 rounded-full object-cover flex-shrink-0" />
+          <div><p class="text-white font-semibold text-sm leading-none mb-0.5">Val Andrade</p>
+          <p class="text-white/35 text-[10px]">6 meses atrás · Local Guide</p></div>
+          <div class="ml-auto flex-shrink-0"><span style="color:#F5C518;font-size:0.75rem;">★★★★★</span></div>
+        </div>
+        <p class="text-white/52 text-sm leading-relaxed">
+          "A Dr.Patricia é uma profissional de excelência, eficiente e sempre rápida no retorno.
+          Todas as demandas que precisamos tivemos retorno muito rápido. Pra nós ela é nota
+          1000. Super recomendo."
+        </p>
+      </div>
+
+      <div class="glass-panel flex-shrink-0 w-[490px] p-6 rounded-2xl cursor-hover">
+        <div class="flex items-center gap-3 mb-4">
+          <img src="img/tereza.jpeg" alt="Tereza Cristina" class="w-10 h-10 rounded-full object-cover flex-shrink-0" />
+          <div><p class="text-white font-semibold text-sm leading-none mb-0.5">Tereza Cristina</p>
+          <p class="text-white/35 text-[10px]">um ano atrás</p></div>
+          <div class="ml-auto flex-shrink-0"><span style="color:#F5C518;font-size:0.75rem;">★★★★★</span></div>
+        </div>
+        <p class="text-white/52 text-sm leading-relaxed">
+          "Dra Patricia é super competente, educada, explica tudo com muita clareza. Fiquei muito
+          satisfeita com o trabalho dela no inventário da minha mãe. Se precisar de novo, com
+          certeza, ela será minha escolha."
+        </p>
+      </div>
+
+      <div class="glass-panel flex-shrink-0 w-[490px] p-6 rounded-2xl cursor-hover">
+        <div class="flex items-center gap-3 mb-4">
+          <img src="img/ana-lucia.jpeg" alt="Ana Lucia Cardoso de Souza" class="w-10 h-10 rounded-full object-cover flex-shrink-0" />
+          <div><p class="text-white font-semibold text-sm leading-none mb-0.5">Ana Lucia Cardoso de Souza</p>
+          <p class="text-white/35 text-[10px]">um ano atrás</p></div>
+          <div class="ml-auto flex-shrink-0"><span style="color:#F5C518;font-size:0.75rem;">★★★★★</span></div>
+        </div>
+        <p class="text-white/52 text-sm leading-relaxed">
+          "Patricia é uma profissional muito competente e atenciosa. Atendeu prontamente minhas
+          solicitações e esclareceu todas as dúvidas. Me ajudou a fechar uma negociação com muita
+          segurança. Sou grata ao seu trabalho!"
+        </p>
+      </div>
+
+      <!-- CONJUNTO B — duplicata para loop -->
+      <div class="glass-panel flex-shrink-0 w-[490px] p-6 rounded-2xl cursor-hover">
+        <div class="flex items-center gap-3 mb-4">
+          <img src="img/rosane.jpeg" alt="Rosane Machado" class="w-10 h-10 rounded-full object-cover flex-shrink-0" />
+          <div><p class="text-white font-semibold text-sm leading-none mb-0.5">Rosane Machado</p>
+          <p class="text-white/35 text-[10px]">7 meses atrás</p></div>
+          <div class="ml-auto flex-shrink-0"><span style="color:#F5C518;font-size:0.75rem;">★★★★★</span></div>
+        </div>
+        <p class="text-white/52 text-sm leading-relaxed">
+          "Gostaria de agradecer a Dra. Patrícia pela atenção, eficiência e agilidade na resolução
+          do inventário. Parabéns por ser uma excelente profissional. Ficamos muito satisfeitos e
+          recomendamos fortemente o seu trabalho!"
+        </p>
+      </div>
+
+      <div class="glass-panel flex-shrink-0 w-[480px] p-6 rounded-2xl cursor-hover"
+           style="border-top-color: rgba(201,168,76,0.28);">
+        <div class="flex items-center gap-3 mb-4">
+          <img src="img/val.jpeg" alt="Val Andrade" class="w-10 h-10 rounded-full object-cover flex-shrink-0" />
+          <div><p class="text-white font-semibold text-sm leading-none mb-0.5">Val Andrade</p>
+          <p class="text-white/35 text-[10px]">6 meses atrás · Local Guide</p></div>
+          <div class="ml-auto flex-shrink-0"><span style="color:#F5C518;font-size:0.75rem;">★★★★★</span></div>
+        </div>
+        <p class="text-white/52 text-sm leading-relaxed">
+          "A Dr.Patricia é uma profissional de excelência, eficiente e sempre rápida no retorno.
+          Todas as demandas que precisamos tivemos retorno muito rápido. Pra nós ela é nota
+          1000. Super recomendo."
+        </p>
+      </div>
+
+      <div class="glass-panel flex-shrink-0 w-[490px] p-6 rounded-2xl cursor-hover">
+        <div class="flex items-center gap-3 mb-4">
+          <img src="img/tereza.jpeg" alt="Tereza Cristina" class="w-10 h-10 rounded-full object-cover flex-shrink-0" />
+          <div><p class="text-white font-semibold text-sm leading-none mb-0.5">Tereza Cristina</p>
+          <p class="text-white/35 text-[10px]">um ano atrás</p></div>
+          <div class="ml-auto flex-shrink-0"><span style="color:#F5C518;font-size:0.75rem;">★★★★★</span></div>
+        </div>
+        <p class="text-white/52 text-sm leading-relaxed">
+          "Dra Patricia é super competente, educada, explica tudo com muita clareza. Fiquei muito
+          satisfeita com o trabalho dela no inventário da minha mãe. Se precisar de novo, com
+          certeza, ela será minha escolha."
+        </p>
+      </div>
+
+      <div class="glass-panel flex-shrink-0 w-[490px] p-6 rounded-2xl cursor-hover">
+        <div class="flex items-center gap-3 mb-4">
+          <img src="img/ana-lucia.jpeg" alt="Ana Lucia Cardoso de Souza" class="w-10 h-10 rounded-full object-cover flex-shrink-0" />
+          <div><p class="text-white font-semibold text-sm leading-none mb-0.5">Ana Lucia Cardoso de Souza</p>
+          <p class="text-white/35 text-[10px]">um ano atrás</p></div>
+          <div class="ml-auto flex-shrink-0"><span style="color:#F5C518;font-size:0.75rem;">★★★★★</span></div>
+        </div>
+        <p class="text-white/52 text-sm leading-relaxed">
+          "Patricia é uma profissional muito competente e atenciosa. Atendeu prontamente minhas
+          solicitações e esclareceu todas as dúvidas. Me ajudou a fechar uma negociação com muita
+          segurança. Sou grata ao seu trabalho!"
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+
+<!-- ══════════════════════════════════════════════════════
+     SEXTA DOBRA — CONTATO
+     ══════════════════════════════════════════════════════ -->
+<section class="py-32 relative z-10" id="contato">
+
+  <div class="absolute top-0 left-6 md:left-12 z-20 hidden md:block -translate-y-1/2">
+    <span class="glass-panel glass-static px-3 py-1 rounded
+                 text-[10px] font-mono uppercase tracking-widest border border-white/5"
+          style="color: rgba(201,168,76,0.5);">
+      [ 05. CONTATO ]
+    </span>
+  </div>
+
+  <div class="absolute inset-0 pointer-events-none overflow-hidden z-0">
+    <div style="position:absolute;width:600px;height:600px;bottom:-150px;left:50%;transform:translateX(-50%);
+                border-radius:50%;background:#C9A84C;filter:blur(120px);opacity:0.07;"></div>
+    <div style="position:absolute;width:350px;height:350px;top:10%;right:-100px;
+                border-radius:50%;background:#8B6B1E;filter:blur(100px);opacity:0.06;"></div>
+  </div>
+
+  <div class="absolute inset-0 z-0 pointer-events-none grid-texture opacity-60"></div>
+
+  <div class="relative z-10 max-w-5xl mx-auto px-6 text-center">
+
+    <div class="inline-flex items-center gap-2.5 mb-8 reveal">
+      <div class="w-px h-5" style="background: linear-gradient(to bottom, var(--gold), transparent);"></div>
+      <span class="text-[10px] uppercase tracking-[0.25em] font-semibold"
+            style="color: rgba(201,168,76,0.75);">Entre em contato</span>
+      <div class="w-px h-5" style="background: linear-gradient(to bottom, var(--gold), transparent);"></div>
+    </div>
+
+    <h2 class="font-heading font-semibold tracking-tight text-white mb-6 reveal"
+        style="font-size: clamp(2.25rem, 5vw, 4rem); line-height: 1.06;">
+      Vamos conversar sobre<br/>
+      <span style="background: linear-gradient(90deg, #D4B56A, #C9A84C, rgba(201,168,76,0.35));
+                   -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+                   background-clip: text;">
+        o seu caso.
+      </span>
+    </h2>
+
+    <p class="text-white/40 leading-[1.8] mb-14 reveal delay-100 mx-auto"
+       style="font-size: 1rem; max-width: 38ch;">
+      Atendimento personalizado e sigiloso. Presencial em Barra da Tijuca ou
+      online para todo o Brasil. Entre em contato e agende sua consulta.
+    </p>
+
+    <div class="flex justify-center mb-16 reveal delay-200">
+      <a href="https://wa.me/5521998199997"
+         target="_blank" rel="noopener noreferrer"
+         class="cursor-hover group inline-flex items-center gap-3 px-8 py-4 rounded-xl
+                text-[11px] font-bold uppercase tracking-widest transition-all duration-300"
+         style="background: linear-gradient(135deg, var(--gold-light), var(--gold));
+                color: #181818;
+                box-shadow: 0 6px 32px rgba(201,168,76,0.40);"
+         onmouseover="this.style.background='white';this.style.boxShadow='0 6px 32px rgba(255,255,255,0.15)';"
+         onmouseout="this.style.background='linear-gradient(135deg,#D4B56A,#C9A84C)';this.style.boxShadow='0 6px 32px rgba(201,168,76,0.40)';">
+        <span class="iconify flex-shrink-0"
+              data-icon="lucide:message-circle" data-width="17" data-stroke-width="1.75"></span>
+        Agendar consulta pelo WhatsApp
+      </a>
+    </div>
+
+    <div class="w-full h-px mb-16 reveal"
+         style="background: linear-gradient(to right, transparent, rgba(201,168,76,0.18), transparent);"></div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-20">
+
+      <a href="https://wa.me/5521998199997" target="_blank" rel="noopener noreferrer"
+         class="glass-panel cursor-hover group px-6 py-7 rounded-2xl flex flex-col items-center gap-4
+                reveal delay-100 no-underline transition-all duration-300">
+        <div class="w-12 h-12 rounded-2xl flex items-center justify-center"
+             style="background:rgba(201,168,76,0.1);border:1px solid rgba(201,168,76,0.2);">
+          <span class="iconify" data-icon="lucide:phone" data-width="20" data-stroke-width="1.5"
+                style="color:var(--gold);"></span>
+        </div>
+        <div>
+          <p class="text-[10px] uppercase tracking-widest font-semibold mb-1.5"
+             style="color:rgba(201,168,76,0.6);">WhatsApp</p>
+          <p class="text-white/75 font-medium text-sm">(21) 99819-9997</p>
+        </div>
+        <span class="iconify text-white/20 group-hover:text-white/50 transition-colors mt-auto"
+              data-icon="lucide:arrow-up-right" data-width="14"></span>
+      </a>
+
+      <a href="https://instagram.com/patricia_inocencio" target="_blank" rel="noopener noreferrer"
+         class="glass-panel cursor-hover group px-6 py-7 rounded-2xl flex flex-col items-center gap-4
+                reveal delay-200 no-underline transition-all duration-300">
+        <div class="w-12 h-12 rounded-2xl flex items-center justify-center"
+             style="background:rgba(201,168,76,0.1);border:1px solid rgba(201,168,76,0.2);">
+          <span class="iconify" data-icon="lucide:instagram" data-width="20" data-stroke-width="1.5"
+                style="color:var(--gold);"></span>
+        </div>
+        <div>
+          <p class="text-[10px] uppercase tracking-widest font-semibold mb-1.5"
+             style="color:rgba(201,168,76,0.6);">Instagram</p>
+          <p class="text-white/75 font-medium text-sm">@patricia_inocencio</p>
+        </div>
+        <span class="iconify text-white/20 group-hover:text-white/50 transition-colors mt-auto"
+              data-icon="lucide:arrow-up-right" data-width="14"></span>
+      </a>
+
+      <a href="mailto:p.inocencio@adv.oabrj.org.br"
+         class="glass-panel cursor-hover group px-6 py-7 rounded-2xl flex flex-col items-center gap-4
+                reveal delay-300 no-underline transition-all duration-300">
+        <div class="w-12 h-12 rounded-2xl flex items-center justify-center"
+             style="background:rgba(201,168,76,0.1);border:1px solid rgba(201,168,76,0.2);">
+          <span class="iconify" data-icon="lucide:mail" data-width="20" data-stroke-width="1.5"
+                style="color:var(--gold);"></span>
+        </div>
+        <div>
+          <p class="text-[10px] uppercase tracking-widest font-semibold mb-1.5"
+             style="color:rgba(201,168,76,0.6);">E-mail</p>
+          <p class="text-white/75 font-medium text-sm">p.inocencio@adv.oabrj.org.br</p>
+        </div>
+        <span class="iconify text-white/20 group-hover:text-white/50 transition-colors mt-auto"
+              data-icon="lucide:arrow-up-right" data-width="14"></span>
+      </a>
+
+    </div>
+
+    <div class="reveal delay-400 inline-flex items-center gap-3 px-5 py-3 rounded-full glass-panel glass-static">
+      <span class="iconify flex-shrink-0" data-icon="lucide:map-pin"
+            data-width="13" style="color:rgba(201,168,76,0.6);"></span>
+      <span class="text-white/38 text-xs tracking-wide">
+        Av. das Américas, 2480 · Bloco 5, Sala 126 · Barra da Tijuca · Rio de Janeiro - RJ · 22640-101
+      </span>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── Footer ──────────────────────────────────────────── -->
+<footer class="relative z-10 border-t py-8"
+        style="border-color: rgba(201,168,76,0.1);">
+  <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
+    <div class="flex items-center gap-3">
+      <img src="img/logo.png" alt="Patricia Inocêncio" class="h-8 w-auto"
+           style="filter: drop-shadow(0 0 8px rgba(201,168,76,0.25));" />
+      <span class="text-white/25 text-xs tracking-wide">Patricia Inocêncio · Advocacia e Consultoria Jurídica</span>
+    </div>
+    <p class="text-white/20 text-xs tracking-wide">OAB/RJ 232.012 · © 2025 Todos os direitos reservados</p>
+  </div>
+</footer>
+
+<!-- Site scripts -->
+<script src="js/main.js"></script>
+
+</body>
+</html>
